@@ -1,7 +1,7 @@
 {
     "editor.formatOnSave": true,
     "arduino.path": "/home/prokop/bin/arduino-1.8.12/",
-    "arduino.commandPath": "./arduino",
+    "arduino.commandPath": "arduino",
     "arduino.logLevel": "info",
     "arduino.allowPDEFiletype": false, 
     "arduino.enableUSBDetection": true,

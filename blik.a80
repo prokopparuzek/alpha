@@ -1,0 +1,22 @@
+            .ORG    0 
+RESET:
+            DI
+            LXI     SP,0x8401 
+            EI       
+LOOP:                
+            MVI     A,0x01 
+            OUT     0xFE 
+            CALL    DELAY 
+            MVI     A,0x00 
+            OUT     0xFE 
+            CALL    DELAY 
+            JMP     LOOP 
+DELAY:               
+            LXI     D,38400 
+DLOOP:               
+            DCX     D 
+            MOV     A,D 
+            ORA     E 
+            JNZ     DLOOP 
+            RET
+
